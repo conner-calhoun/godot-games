@@ -1,0 +1,55 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://assets/scripts/player/Henry.gd" type="Script" id=1]
+[ext_resource path="res://assets/sprites/player/henry/henry_idle0.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/player/henry/henry_idle1.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/player/henry/henry_r_walk0.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/player/henry/henry_r_walk1.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/player/henry/henry_r_walk2.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/player/henry/henry_walk0.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/player/henry/henry_walk1.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/player/henry/henry_walk2.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/player/henry/henry_fall0.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/player/henry/henry_fall1.png" type="Texture" id=11]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "idle",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "r_walk",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "walk",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "fall",
+"speed": 8.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 6.0
+height = 18.0
+
+[node name="Henry" type="KinematicBody2D"]
+collision_mask = 6
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 1 )
+shape = SubResource( 2 )

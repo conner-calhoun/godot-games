@@ -1,0 +1,202 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/sprites/environment/dirt_tiles.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8, 8 )
+
+[node name="DirtTiles" type="Node2D"]
+
+[node name="dirt_0" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 112, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_0/RigidBody2D"]
+shape = SubResource( 1 )
+
+[node name="dirt_1" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 20, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 112, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_1/RigidBody2D"]
+shape = SubResource( 1 )
+
+[node name="dirt_2" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 40, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 112, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_2/RigidBody2D"]
+shape = SubResource( 1 )
+
+[node name="dirt_3" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 0, 20 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 128, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_3/RigidBody2D"]
+shape = SubResource( 1 )
+
+[node name="dirt_4" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 20, 20 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 128, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_4/RigidBody2D"]
+shape = SubResource( 1 )
+
+[node name="dirt_5" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 40, 20 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 128, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_5/RigidBody2D"]
+shape = SubResource( 1 )
+
+[node name="dirt_6" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 0, 40 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 144, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_6/RigidBody2D"]
+shape = SubResource( 1 )
+
+[node name="dirt_7" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 20, 40 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 144, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_7/RigidBody2D"]
+shape = SubResource( 1 )
+
+[node name="dirt_8" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 40, 40 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 144, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_8/RigidBody2D"]
+shape = SubResource( 1 )
+
+[node name="dirt_9" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 60, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 112, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_9"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_9/RigidBody2D"]
+shape = SubResource( 1 )
+
+[node name="dirt_10" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 80, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 144, 112, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_10/RigidBody2D"]
+shape = SubResource( 1 )
+
+[node name="dirt_11" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 60, 20 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 128, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_11/RigidBody2D"]
+shape = SubResource( 1 )
+
+[node name="dirt_12" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 80, 20 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 144, 128, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="dirt_12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dirt_12/RigidBody2D"]
+shape = SubResource( 1 )

@@ -1,0 +1,112 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/TestScene.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Portal.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Platform.tscn" type="PackedScene" id=4]
+
+[sub_resource type="DynamicFontData" id=1]
+antialiased = false
+hinting = 0
+font_path = "res://fonts/SourceCodePro-SemiBold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+font_data = SubResource( 1 )
+
+[node name="TestScene" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Portal" parent="." instance=ExtResource( 2 )]
+position = Vector2( 215.93, 247.197 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+
+[node name="Player" parent="Camera2D" instance=ExtResource( 3 )]
+position = Vector2( 137.909, 450.971 )
+
+[node name="Platforms" type="Node2D" parent="Camera2D"]
+editor/display_folded = true
+
+[node name="Platform3" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 484.382, 129.188 )
+scale = Vector2( 4.53725, 0.0661808 )
+
+[node name="Platform6" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 625.208, 244.261 )
+scale = Vector2( 0.227, 0.066 )
+
+[node name="Platform8" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 806.225, 285.72 )
+scale = Vector2( 0.227, 0.066 )
+
+[node name="Platform9" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 431.458, 262.89 )
+scale = Vector2( 0.227, 0.066 )
+
+[node name="Platform10" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 506.564, 380.067 )
+scale = Vector2( 0.227, 0.066 )
+
+[node name="Platform14" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 394.301, 496.067 )
+scale = Vector2( 0.227, 0.066 )
+
+[node name="Platform15" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 654.143, 472.173 )
+scale = Vector2( 0.227, 0.066 )
+
+[node name="Platform16" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 744.827, 364.857 )
+scale = Vector2( 0.227, 0.066 )
+
+[node name="Platform17" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 858.283, 449.27 )
+scale = Vector2( 0.227, 0.066 )
+
+[node name="Platform13" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 278.511, 377.12 )
+scale = Vector2( 0.227, 0.066 )
+
+[node name="Platform12" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 166.932, 469.752 )
+scale = Vector2( 0.227, 0.066 )
+
+[node name="Platform11" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 216.406, 268.699 )
+scale = Vector2( 0.227, 0.066 )
+
+[node name="Platform7" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 329.235, 232.587 )
+scale = Vector2( 0.227, 0.066 )
+
+[node name="Platform2" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 3.9267, 400.145 )
+rotation = 1.5708
+scale = Vector2( 1.697, 0.066 )
+
+[node name="Platform5" parent="Camera2D/Platforms" instance=ExtResource( 4 )]
+position = Vector2( 1021.2, 449.883 )
+rotation = 1.5708
+scale = Vector2( 2.017, 0.066 )
+
+[node name="Label" type="Label" parent="Camera2D"]
+margin_left = 26.8697
+margin_top = 38.2964
+margin_right = 236.87
+margin_bottom = 107.296
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "LEFT CLICK = SHOOT
+RIGHT CLICK = REEL IN / RELEASE
+X = CUT LINE"
+
+[node name="Time" type="Label" parent="."]
+margin_left = 812.302
+margin_top = 90.5835
+margin_right = 1122.3
+margin_bottom = 159.583
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "TIME: 0.0"

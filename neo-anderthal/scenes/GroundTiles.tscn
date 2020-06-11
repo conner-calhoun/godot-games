@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/simple_ground_tiles.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8, 8 )
+
+[node name="GroundTiles" type="Node2D"]
+
+[node name="ground0" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 0, 0.5 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 78, 16, 18 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="ground0"]
+editor/display_folded = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ground0/RigidBody2D"]
+position = Vector2( 0, 1 )
+shape = SubResource( 1 )
+
+[node name="ground1" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 20, 1.5 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 96, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RigidBody2D" type="RigidBody2D" parent="ground1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ground1/RigidBody2D"]
+shape = SubResource( 1 )
